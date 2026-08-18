@@ -1,0 +1,17 @@
+$ flex valvar.l
+$ bison -d valvar.y
+$ gcc lex.yy.c valvar.tab.c -o valvar -lfl
+$ ./valvar
+Enter the variable:
+add
+Valid variable
+
+$ ./valvar
+Enter the variable:
+add1
+Valid variable
+
+$ ./valvar
+Enter the variable:
+1add
+Invalid variable
