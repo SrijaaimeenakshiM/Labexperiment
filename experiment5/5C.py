@@ -49,8 +49,8 @@ plt.legend(loc='upper left')
 plt.tight_layout()
 
 print("\nAnalysis complete. Data decomposed into Trend, Seasonality, and Residuals.")
-print("Uncomment plt.show() in the script to view the decomposition plot visually.")
-# plt.show() # Uncomment to view plot
+plt.savefig('s:/A/lab_Experiments/dav/experiment5/5C_plot.png')
+print("Decomposition plot saved as 5C_plot.png.")
 
 # Basic Moving Average (Rolling window)
 ts_df['SMA_3_Months'] = ts_df['Sales'].rolling(window=3).mean()

@@ -25,10 +25,11 @@ try:
     print(iris.groupby('species').mean())
 
     # 5. Visualizing descriptive stats (optional)
-    print("\nGenerating Pairplot... (Window may pop up)")
-    # sns.pairplot(iris, hue='species')
-    # plt.title("Pairplot of Iris Dataset")
-    # plt.show()
+    print("\nGenerating Pairplot and saving to 2D_plot.png...")
+    plot = sns.pairplot(iris, hue='species')
+    plot.fig.suptitle("Pairplot of Iris Dataset", y=1.02)
+    plt.savefig('s:/A/lab_Experiments/dav/experiment2/2D_plot.png', bbox_inches='tight')
+    print("Plot saved as 2D_plot.png")
     print("Uncomment the plotting code in the script to view the pairplot visually.")
 
 except Exception as e:

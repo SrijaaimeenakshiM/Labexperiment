@@ -33,5 +33,5 @@ plt.ylabel('Density')
 plt.legend()
 
 print(f"Normal curve parameters for '{feature}': mean = {mu:.4f}, std = {std:.4f}")
-print("Plot generated. Uncomment plt.show() in the script to view it visually.")
-# plt.show() # Uncomment this line to visualize the plot
+plt.savefig('s:/A/lab_Experiments/dav/experiment4/4A_plot.png')
+print("Plot generated and saved as 4A_plot.png.")

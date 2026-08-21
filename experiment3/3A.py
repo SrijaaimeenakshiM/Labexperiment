@@ -36,7 +36,7 @@ try:
     plt.title('Pima Dataset: Glucose Distribution')
     
     plt.tight_layout()
-    # plt.show() # Uncomment this to display plots
-    print("\nUnivariate plots generated. Uncomment plt.show() in the script to view them.")
+    plt.savefig('s:/A/lab_Experiments/dav/experiment3/3A_plot.png')
+    print("\nUnivariate plots generated and saved as 3A_plot.png.")
 except Exception as e:
     print("\nCould not load Pima Indians dataset:", e)
